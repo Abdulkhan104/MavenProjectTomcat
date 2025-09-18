@@ -42,7 +42,7 @@ pipeline {
                         url: 'http://98.81.82.64:8081/'
                     )
                 ], 
-                contextPath: 'http://98.81.82.64:8081/webapp/', 
+                contextPath: '/webapp', 
                 war: 'webapp/target/webapp.war'
             }
         }
