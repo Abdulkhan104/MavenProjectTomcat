@@ -12,7 +12,7 @@ pipeline {
                 sh 'mvn package'
             }
         }
-        stage('Terraform Apply') {
+        stage('AutomationWithTOMCAT') {
             steps {
                 deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat-1', path: '', url: 'http://54.234.153.236:8081/')], contextPath: null, war: '**/*war'
             }
